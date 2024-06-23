@@ -140,7 +140,7 @@ char *timeElapsed() {
 	return result;
 }
 
-char *timeElapsedShort() { /* WIP. Low priority, since it'll never be used; unless dad actually finds the milk somehow. */
+char *timeElapsedShort() { /* WIP. High priority */
 	return "10 Years";
 }
 
@@ -165,7 +165,8 @@ void returnWithMilk() {
 	sleep(3);
 	println("\n T H E    E N D ");
 	sleep(12);
-	scanf("");
+	println("Type anything and press enter the exit program.");
+	scanf("\n");
 }
 
 void dad(int c, char *storeItems[]) {
@@ -192,17 +193,18 @@ int main(int argc, char *argv[]) {
 		println("Dad: Hi bud. Do you need me to go get some milk?\n");
 		println("Dad.Exe 2 has ended. To run Dad.Exe 2, Insert a list "
 				"of store items, separated by spaces, encased in quotes if "
-				"there is more than one word in an item. ");
+				"there is more than one word in an item. Usage: %s storeItem1 "
+				"'store item 2' store_Item_3 milk 'or no milk' (etc)", argv[0]);
 		return 0;
 	}
-	if (strcmp((char *) strlwr_(argv[1]), "milk") == 0 && argc == 2)
-		println("Really? The store only sells milk? Okay.");
+	if (strcmp((char *) strlwr_(argv[1]), "milk") == 0 && argc == 2) /*TODO: detect if there are multiple parameters but they are all "milk"*/
+		println("Really? The store only sells milk? Okay.\n");
 	sleep(1);
 	println("Dad has left to get the milk.");
 	sleep(1);
 	println("Dad will come back when he has found the milk.");
 	sleep(2);
-
+	/*TODO: create a new argv variable that doesn't contain argv[0], and pass it on to dad()*/
 	dad(argc, argv);
 
 	return 0;
