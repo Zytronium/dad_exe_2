@@ -1,0 +1,11 @@
+# ninja log v6
+6	484	7408282738782999	CMakeFiles/dad_exe_2.dir/main.c.obj	c1aae63af4c84fa0
+486	971	7408282743588764	dad_exe_2.exe	b5ce5e59bcb4db07
+10	211	7408285731972175	CMakeFiles/dad_exe_2.dir/main.c.obj	c1aae63af4c84fa0
+212	627	7408285734000568	dad_exe_2.exe	b5ce5e59bcb4db07
+9	196	7408287565220231	CMakeFiles/dad_exe_2.dir/main.c.obj	c1aae63af4c84fa0
+196	720	7408287567096662	dad_exe_2.exe	b5ce5e59bcb4db07
+9	207	7408290542449480	CMakeFiles/dad_exe_2.dir/main.c.obj	c1aae63af4c84fa0
+208	616	7408290544439366	dad_exe_2.exe	b5ce5e59bcb4db07
+9	203	7408293773136991	CMakeFiles/dad_exe_2.dir/main.c.obj	c1aae63af4c84fa0
+204	719	7408293775077528	dad_exe_2.exe	b5ce5e59bcb4db07
